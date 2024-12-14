@@ -96,9 +96,9 @@ module.exports = {
   //   allowCustomScopes: true,
 
   // 跳过问题
-  skipQuestions: ['body', 'footer', 'breaking'],
-  subjectLimit: 72,
-  breaklineChar: '|', // 支持 body 和 footer
-  // 设置只有 type 选择了 feat 或 fix，才询问 breaking message
-  //   allowBreakingChanges: [],
+  //   skipQuestions: ['body', 'footer', 'breaking'],
+  //   subjectLimit: 72,
+  //   breaklineChar: '|', // 支持 body 和 footer
+  //   // 设置只有 type 选择了 feat 或 fix，才询问 breaking message
+  //   //   allowBreakingChanges: [],
 };
