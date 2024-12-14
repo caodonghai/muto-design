@@ -35,5 +35,6 @@ export default {
       ],
     ],
     'subject-empty': [2, 'always'],
+    'subject-min-length': [2, 'always', 20],
   },
 };
