@@ -63,14 +63,6 @@ module.exports = {
     //   name: '👷 ci:       CI related changes',
     // },
   ],
-  rules: {
-    subject: [
-      // 当前验证的错误级别
-      3,
-      // 在什么情况下进行验证，always表示一直进行验证
-      'always',
-    ],
-  },
   messages: {
     type: '请选择提交类型(必填)',
     customScope: '请输入文件修改范围(可选)',
@@ -81,7 +73,7 @@ module.exports = {
     confirmCommit: '确定提交此说明吗？',
   },
   // scope 类型（定义之后，可通过上下键选择）
-  scopes: scopes,
+  //   scopes: scopes,
   //   scopes: [
   //     ['components', '组件相关'],
   //     ['hooks', 'hook 相关'],
