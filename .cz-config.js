@@ -73,7 +73,7 @@ module.exports = {
     confirmCommit: '确定提交此说明吗？',
   },
   // scope 类型（定义之后，可通过上下键选择）
-  //   scopes: scopes,
+  scopes: scopes,
   //   scopes: [
   //     ['components', '组件相关'],
   //     ['hooks', 'hook 相关'],

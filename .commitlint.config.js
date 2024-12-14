@@ -34,7 +34,9 @@ export default {
         'camel-case',
       ],
     ],
-    'subject-empty': [2, 'always'],
-    'subject-min-length': [2, 'always', 20],
+    'type-case': [0],
+    'type-empty': [0],
+    'subject-full-stop': [0, 'never'],
+    'subject-case': [0, 'never'],
   },
 };
