@@ -58,8 +58,14 @@ module.exports = {
     footer: '请输入要关闭的issue(可选)',
     confirmCommit: '确定提交此说明吗？',
   },
-  //   allowCustomScopes: false,
+
+  // 是否允许自定义填写 scope，在 scope 选择的时候，会有 empty 和 custom 可以选择。
+  // allowCustomScopes: true,
+
   // 跳过问题
-  skipQuestions: ['body', 'customScope', 'footer'],
+  skipQuestions: ['custom', 'body', 'footer'],
   subjectLimit: 72,
+  breaklineChar: '|', // 支持 body 和 footer
+  // 设置只有 type 选择了 feat 或 fix，才询问 breaking message
+  allowBreakingChanges: [],
 };
