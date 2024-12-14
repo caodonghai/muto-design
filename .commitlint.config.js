@@ -34,5 +34,6 @@ export default {
         'camel-case',
       ],
     ],
+    'subject-empty': [2, 'always'],
   },
 };
