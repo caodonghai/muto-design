@@ -27,7 +27,5 @@ function getAllFiles(filePath) {
 
 module.exports = function readFiles(srcDir) {
   let allFiles = getAllFiles(srcDir);
-
-  console.log(`文件数量:${allFiles.length}`);
   return allFiles;
 };
