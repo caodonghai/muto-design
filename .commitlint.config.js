@@ -5,11 +5,10 @@ export default {
   rules: {
     'subject-case': [
       // 当前验证的错误级别
-      2,
+      3,
       // 在什么情况下进行验证，always表示一直进行验证
       'always',
     ],
-    customScopes: [0],
     // 类型枚举，git提交type必须是以下类型
     'type-enum': [
       // 当前验证的错误级别
