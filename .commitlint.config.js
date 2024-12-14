@@ -23,20 +23,9 @@ export default {
         'chore', // 对构建过程或辅助工具和库的更改（不影响源文件、测试用例）
       ],
     ],
-    'subject-case': [
-      2,
-      'always',
-      [
-        'sentence-case',
-        'start-case',
-        'pascal-case',
-        'upper-case',
-        'camel-case',
-      ],
-    ],
     'type-case': [0],
     'type-empty': [0],
-    'subject-full-stop': [0, 'never'],
-    'subject-case': [0, 'never'],
+    'subject-full-stop': [2, 'always'],
+    'subject-case': [2, 'always'],
   },
 };
