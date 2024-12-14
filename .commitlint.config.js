@@ -1,6 +1,6 @@
 export default {
   // 继承的规则
-  extends: ['git-commit-emoji', 'cz'],
+  extends: ['git-commit-emoji', 'cz-conventional-changelog'],
   // @see: https://commitlint.js.org/#/reference-rules
   rules: {
     // 类型枚举，git提交type必须是以下类型
