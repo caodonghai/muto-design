@@ -1,34 +1,65 @@
 module.exports = {
   types: [
-    { value: 'feat', name: 'feat:     新功能', emoji: '🎸' },
-    { value: 'fix', name: 'fix:      修复', emoji: '🐛' },
-    { value: 'docs', name: 'docs:     文档变更', emoji: '✏️' },
     {
-      value: 'style',
-      name: 'style:    代码格式(不影响代码运行的变动)',
-      emoji: '💄',
+      value: ':sparkles: feat',
+      name: '✨ feat:     新功能代码提交',
     },
     {
-      value: 'refactor',
-      name: 'refactor: 重构(既不是增加feature，也不是修复bug)',
-      emoji: '💡',
+      value: ':bug: fix',
+      name: '🐛 fix:      修复bug',
     },
-    { value: 'perf', name: 'perf:     性能优化', emoji: '⚡️' },
-    { value: 'test', name: 'test:     增加测测试', emoji: '💍' },
-
-    { value: 'chore', name: 'chore:    构建过程或辅助工具的变动', emoji: '🤖' },
-    { value: 'revert', name: 'revert:   回退' },
-    { value: 'build', name: 'build:    打包' },
-  ], // override the messages, defaults are as follows
+    {
+      value: ':lipstick: style',
+      name: '💄 style:    代码的样式美化',
+    },
+    {
+      value: ':recycle: refactor',
+      name: '♻️  refactor: 代码重构',
+    },
+    {
+      value: ':rewind: revert',
+      name: '⏪️ revert:   代码回退',
+    },
+    {
+      value: ':pencil2: docs',
+      name: '✏️  docs:     文档变更',
+    },
+    {
+      value: ':zap: perf',
+      name: '⚡️ perf:     性能优化',
+    },
+    {
+      value: ':rocket: chore',
+      name: '🚀 chore:    构建/工程依赖/工具/工程化配置',
+    },
+    // {
+    //   value: ':package: build',
+    //   name: '📦️ build:    打包',
+    // },
+    // {
+    //   value: ':tada: release',
+    //   name: '🎉 release:  发布正式版',
+    // },
+    // {
+    //   value: ':white_check_mark: test',
+    //   name: '✅ test:     测试',
+    // },
+    // {
+    //   value: ':construction_worker: ci',
+    //   name: '👷 ci:       CI related changes',
+    // },
+  ],
   messages: {
-    type: '请选择提交类型:', // scope: '请输入文件修改范围(可选):', // used if allowCustomScopes is true
-    customScope: '请输入修改范围(可选):',
-    subject: '请简要描述提交(必填):',
-    body: '请输入详细描述(可选，待优化去除，跳过即可):', // breaking: 'List any BREAKING CHANGES (optional):\n',
-    footer: '请输入要关闭的issue(待优化去除，跳过即可):',
-    confirmCommit: '确认使用以上信息提交？(y/n/e/h)',
+    type: '请选择提交类型(必填)',
+    customScope: '请输入文件修改范围(可选)',
+    subject: '请简要描述提交(必填)',
+    body: '请输入详细描述(可选)',
+    breaking: '列出任何BREAKING CHANGES(可选)',
+    footer: '请输入要关闭的issue(可选)',
+    confirmCommit: '确定提交此说明吗？',
   },
-  allowCustomScopes: true, // allowBreakingChanges: ['feat', 'fix'],
-  skipQuestions: ['scope', 'body', 'footer'], // limit subject length, commitlint默认是72
+  //   allowCustomScopes: false,
+  // 跳过问题
+  skipQuestions: ['body', 'customScope', 'footer'],
   subjectLimit: 72,
 };
