@@ -3,12 +3,6 @@ export default {
   extends: ['git-commit-emoji', 'cz'],
   // @see: https://commitlint.js.org/#/reference-rules
   rules: {
-    'subject-case': [
-      // 当前验证的错误级别
-      3,
-      // 在什么情况下进行验证，always表示一直进行验证
-      'always',
-    ],
     // 类型枚举，git提交type必须是以下类型
     'type-enum': [
       // 当前验证的错误级别
@@ -27,6 +21,17 @@ export default {
         'ci', // 修改 CI 配置、脚本
         'revert', // 回滚 commit
         'chore', // 对构建过程或辅助工具和库的更改（不影响源文件、测试用例）
+      ],
+    ],
+    'subject-case': [
+      2,
+      'always',
+      [
+        'sentence-case',
+        'start-case',
+        'pascal-case',
+        'upper-case',
+        'camel-case',
       ],
     ],
   },
