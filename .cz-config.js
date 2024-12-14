@@ -64,7 +64,7 @@ module.exports = {
     // },
   ],
   rules: {
-    'subject-case': [
+    subject: [
       // 当前验证的错误级别
       3,
       // 在什么情况下进行验证，always表示一直进行验证
