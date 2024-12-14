@@ -25,7 +25,7 @@ export default {
     ],
     'type-case': [0],
     'type-empty': [0],
-    'subject-full-stop': [2, 'always'],
-    'subject-case': [2, 'always'],
+    'subject-full-stop': [1, 'always'],
+    'subject-case': [1, 'always'],
   },
 };
