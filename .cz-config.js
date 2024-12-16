@@ -15,35 +15,35 @@ const scopes = readFiles(srcPath)
 module.exports = {
   types: [
     {
-      value: ':sparkles: feat',
+      value: 'feat',
       name: '✨ feat:     新功能代码提交',
     },
     {
-      value: ':bug: fix',
+      value: 'fix',
       name: '🐛 fix:      修复bug',
     },
     {
-      value: ':lipstick: style',
+      value: 'style',
       name: '💄 style:    代码的样式美化',
     },
     {
-      value: ':recycle: refactor',
+      value: 'refactor',
       name: '♻️  refactor: 代码重构',
     },
     {
-      value: ':rewind: revert',
+      value: 'revert',
       name: '⏪️ revert:   代码回退',
     },
     {
-      value: ':pencil2: docs',
+      value: 'docs',
       name: '✏️  docs:     文档变更',
     },
     {
-      value: ':zap: perf',
+      value: 'perf',
       name: '⚡️ perf:     性能优化',
     },
     {
-      value: ':rocket: chore',
+      value: 'chore',
       name: '🚀 chore:    构建/工程依赖/工具/工程化配置',
     },
     // {
