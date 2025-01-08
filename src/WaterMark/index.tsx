@@ -1,16 +1,8 @@
 import React, { CSSProperties, memo, useState } from 'react';
 import { useObjectEffect } from './hooks';
+import { IWaterMarkProps } from './interface';
 
-export interface IWaterMarkProps {
-  imageWidth?: number;
-  imageHeight?: number;
-  textColor?: string;
-  fontStyle?: string;
-  fontSize?: number;
-  angle?: number;
-  text?: string;
-  style?: CSSProperties;
-}
+export * from './interface';
 
 export function createWaterMark(props: IWaterMarkProps) {
   const {
