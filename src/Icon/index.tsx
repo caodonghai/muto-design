@@ -1,3 +1,4 @@
+import cls from 'classnames';
 import { assign } from 'lodash-es';
 import React, {
   CSSProperties,
@@ -19,6 +20,7 @@ export * from './interface';
  */
 const Icon: FC<IIconProps> = (props) => {
   const { href, type, style, fontSize } = props;
+
   useLayoutEffect(() => {
     importStyleLink(href);
   }, []);
@@ -34,7 +36,11 @@ const Icon: FC<IIconProps> = (props) => {
     return _style;
   }, [fontSize, style]);
 
-  return <i className={`iconfont ${type}`} style={styleMemo}></i>;
+  return (
+    <div className={cls(prefixFun('iconfont'))}>
+      <i className={cls('iconfont', type)} style={styleMemo}></i>
+    </div>
+  );
 };
 
 export default memo(Icon);

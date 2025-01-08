@@ -1,0 +1,1 @@
+export const defaultPrefix = 'dh-ui'

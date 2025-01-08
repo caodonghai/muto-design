@@ -9,6 +9,7 @@ specifiers:
   '@types/react-dom': ^18.0.0
   '@umijs/lint': ^4.0.0
   antd: ^5.22.4
+  classnames: ^2.5.1
   commitizen: ^4.3.1
   commitlint-config-cz: ^0.13.3
   commitlint-config-git-commit-emoji: ^1.0.0
@@ -30,6 +31,7 @@ specifiers:
 dependencies:
   '@ant-design/icons': 5.5.2_nnrd3gsncyragczmpvfhocinkq
   antd: 5.22.4_nnrd3gsncyragczmpvfhocinkq
+  classnames: 2.5.1
   lodash-es: 4.17.21
   react: 18.3.1
   react-dom: 18.3.1_react@18.3.1

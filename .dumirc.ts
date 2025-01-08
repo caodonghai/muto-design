@@ -6,7 +6,7 @@ export default defineConfig({
     name: 'x-msgfi-sdk',
     nav: [
       { title: '介绍', link: '/guide' },
-      { title: '组件', link: '/components/Login' }, // components会默认自动对应到src文件夹
+      { title: '组件', link: '/components/Icon' }, // components会默认自动对应到src文件夹
     ]
   },
   styles: [
