@@ -18,7 +18,8 @@
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepublishOnly": "father doctor && npm run build",
-    "cm": "cz-customizable"
+    "cm": "cz-customizable",
+    "cz": "cz-customizable"
   },
   "authors": [
     "caodonghai"
