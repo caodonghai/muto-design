@@ -16,5 +16,9 @@ export type IIconProps = {
     /**
      * 图标字体大小
      */
-    fontSize?: number  | string
+    fontSize?: number  | string;
+    /**
+     * 类名
+     */
+    className?: string
 }

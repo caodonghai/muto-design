@@ -19,7 +19,7 @@ export * from './interface';
  * @returns ReactNode
  */
 const Icon: FC<IIconProps> = (props) => {
-  const { href, type, style, fontSize } = props;
+  const { href, type, style, fontSize, className } = props;
 
   useLayoutEffect(() => {
     importStyleLink(href);
@@ -36,11 +36,7 @@ const Icon: FC<IIconProps> = (props) => {
     return _style;
   }, [fontSize, style]);
 
-  return (
-    <div className={cls(prefixFun('iconfont'))}>
-      <i className={cls('iconfont', type)} style={styleMemo}></i>
-    </div>
-  );
+  return <i className={cls('iconfont', type, className)} style={styleMemo}></i>;
 };
 
 export default memo(Icon);
