@@ -4,6 +4,7 @@ specifiers:
   '@ant-design/icons': ^5.5.2
   '@commitlint/cli': ^17.1.2
   '@commitlint/config-conventional': ^17.1.0
+  '@types/lodash-es': ^4.17.12
   '@types/react': ^18.0.0
   '@types/react-dom': ^18.0.0
   '@umijs/lint': ^4.0.0
@@ -18,6 +19,7 @@ specifiers:
   father: ^4.1.0
   husky: ^8.0.3
   lint-staged: ^13.0.3
+  lodash-es: ^4.17.21
   prettier: ^2.7.1
   prettier-plugin-organize-imports: ^3.0.0
   prettier-plugin-packagejson: ^2.2.18
@@ -28,10 +30,14 @@ specifiers:
 dependencies:
   '@ant-design/icons': 5.5.2_nnrd3gsncyragczmpvfhocinkq
   antd: 5.22.4_nnrd3gsncyragczmpvfhocinkq
+  lodash-es: 4.17.21
+  react: 18.3.1
+  react-dom: 18.3.1_react@18.3.1
 
 devDependencies:
   '@commitlint/cli': 17.8.1
   '@commitlint/config-conventional': 17.8.1
+  '@types/lodash-es': 4.17.12
   '@types/react': 18.3.14
   '@types/react-dom': 18.3.3_@types+react@18.3.14
   '@umijs/lint': 4.3.36_5orp6btkzk4zyavzmni2po5n7e
@@ -48,8 +54,6 @@ devDependencies:
   prettier: 2.8.8
   prettier-plugin-organize-imports: 3.2.4_prettier@2.8.8
   prettier-plugin-packagejson: 2.5.6_prettier@2.8.8
-  react: 18.3.1
-  react-dom: 18.3.1_react@18.3.1
   stylelint: 14.16.1
 
 packages:
@@ -2861,6 +2865,16 @@ packages:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
       '@types/node': 22.10.1
+    dev: true
+
+  /@types/lodash-es/4.17.12:
+    resolution: {integrity: sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==}
+    dependencies:
+      '@types/lodash': 4.17.14
+    dev: true
+
+  /@types/lodash/4.17.14:
+    resolution: {integrity: sha512-jsxagdikDiDBeIRaPYtArcT8my4tN1og7MtMRquFT3XNA6axxyHDRUemqDz/taRDdOUn0GnGHRCuff4q48sW9A==}
     dev: true
 
   /@types/mdast/3.0.15:
@@ -9217,6 +9231,10 @@ packages:
     dependencies:
       p-locate: 5.0.0
     dev: true
+
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
 
   /lodash.camelcase/4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
