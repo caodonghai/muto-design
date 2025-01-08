@@ -1,7 +1,8 @@
 # WaterMark
 
-This is an example component.
+水印组件
 
+## 基本用法
 ```tsx
 import { useState } from 'react'
 import { Input, Form } from 'antd'
@@ -22,3 +23,6 @@ export default () => {
   )
 }
 ```
+
+## API
+<API id="WaterMark"></API>

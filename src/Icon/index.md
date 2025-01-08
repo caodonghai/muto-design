@@ -1,45 +1,18 @@
 # Icon
 
-This is an example component.
+> 图标组件,
+> 使用「阿里矢量图表组件」的 Font Class 方式使用，具体方法及配置见[使用帮助](https://www.iconfont.cn/help/detail?spm=a313x.manage_type_myprojects.i1.d8cf4382a.72283a81x38YZi&helptype=code)
 
-```tsx
-import { Space } from 'antd'
-import { Icon, IIconProps } from 'x-msgfi-sdk';
+## 基本用法
 
-const MyIcon = ({ ...props }: { type: Omit<IIconProps, 'href'> }) => <Icon href="https://at.alicdn.com/t/c/font_3805931_ldh99wweoaa.css" {...props} />
+通过fontSize 控制图标字体大小
 
-export default () => (
-  <div>
-    <Space direction="vertical">
-      <Space>
-        <MyIcon type="icon-shijian1" />
-        <MyIcon type="icon-jurassic_add" />
-        <MyIcon type="icon-xiaomaomi" />
-        <MyIcon type="icon-yanhua" />
-        <MyIcon type="icon-setting-role" />
-      </Space>
-      <Space>
-        <MyIcon fontSize={24} type="icon-shijian1" />
-        <MyIcon fontSize={24} type="icon-jurassic_add" />
-        <MyIcon fontSize={24} type="icon-xiaomaomi" />
-        <MyIcon fontSize={24} type="icon-yanhua" />
-        <MyIcon fontSize={24} type="icon-setting-role" />
-      </Space>
-      <Space>
-        <MyIcon fontSize={32} type="icon-shijian1" />
-        <MyIcon fontSize={32} type="icon-jurassic_add" />
-        <MyIcon fontSize={32} type="icon-xiaomaomi" />
-        <MyIcon fontSize={32} type="icon-yanhua" />
-        <MyIcon fontSize={32} type="icon-setting-role" />
-      </Space>
-      <Space>
-        <MyIcon fontSize={48} type="icon-shijian1" />
-        <MyIcon fontSize={48} type="icon-jurassic_add" />
-        <MyIcon fontSize={48} type="icon-xiaomaomi" />
-        <MyIcon fontSize={48} type="icon-yanhua" />
-        <MyIcon fontSize={48} type="icon-setting-role" />
-      </Space>
-    </Space>
-  </div>
-)
+```jsx
+import Base from './demo/base';
+
+export default () => <Base />
 ```
+
+
+## API
+<API id="Icon"></API>
