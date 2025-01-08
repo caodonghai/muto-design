@@ -2,11 +2,13 @@ import { CSSProperties } from "react";
 
 export type IIconProps = {
     /**
-     * Font Class 生成的css链接
-     */
+     * @description Font Class 生成的css链接
+     * @default ""
+   */
     href: string;
     /**
-     * icon 类型
+     * @description icon 类型，从iconfont中获取
+     * @default ""
      */
     type: string;
     /**
@@ -14,7 +16,8 @@ export type IIconProps = {
      */
     style?: CSSProperties;
     /**
-     * 图标字体大小
+     * @description 图标字体大小
+     * @default 16px
      */
     fontSize?: number  | string;
     /**
