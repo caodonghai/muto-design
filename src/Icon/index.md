@@ -7,12 +7,7 @@
 
 通过fontSize 控制图标字体大小
 
-```jsx
-import Base from './demo/base';
-
-export default () => <Base />
-```
-
+<code src="./demo/base.tsx">示例1</code>
 
 ## API
 <API id="Icon"></API>
