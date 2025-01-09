@@ -1,5 +1,5 @@
 {
-  "name": "x-msgfi-sdk",
+  "name": "muto-design",
   "version": "0.0.1",
   "description": "A react library developed with dumi",
   "main": "lib/index",
@@ -22,7 +22,7 @@
     "cz": "cz-customizable"
   },
   "authors": [
-    "caodonghai"
+    "caodonghai234@163.com"
   ],
   "license": "MIT",
   "files": [

@@ -6,7 +6,7 @@
 ```tsx
 import { useState } from 'react'
 import { Input, Form } from 'antd'
-import { WaterMark } from 'x-msgfi-sdk';
+import { WaterMark } from 'muto-design';
 
 export default () => {
   const [text, setText] = useState<string>("我是水印")

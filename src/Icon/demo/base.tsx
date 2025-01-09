@@ -1,7 +1,7 @@
 import { Space } from 'antd';
+import { Icon } from 'muto-design';
+import { IIconProps } from 'muto-design/Icon';
 import React from 'react';
-import { Icon } from 'x-msgfi-sdk';
-import { IIconProps } from 'x-msgfi-sdk/Icon';
 
 const MyIcon = ({ ...props }: Omit<IIconProps, 'href'>) => (
   <Icon

@@ -1,7 +1,7 @@
-# x-msgfi-sdk
+# muto-design
 
-[![NPM version](https://img.shields.io/npm/v/x-msgfi-sdk.svg?style=flat)](https://npmjs.org/package/x-msgfi-sdk)
-[![NPM downloads](http://img.shields.io/npm/dm/x-msgfi-sdk.svg?style=flat)](https://npmjs.org/package/x-msgfi-sdk)
+[![NPM version](https://img.shields.io/npm/v/muto-design.svg?style=flat)](https://npmjs.org/package/muto-design)
+[![NPM downloads](http://img.shields.io/npm/dm/muto-design.svg?style=flat)](https://npmjs.org/package/muto-design)
 
 A react library developed with dumi
 

@@ -1,25 +1,27 @@
+# 使用指南
+
 ## 安装
 
 :::code-group
 
 ```bash [npm]
-npm install -D x-msgfi-sdk
+npm install -D muto-design
 ```
 
 ```bash [yarn]
-yarn add -D x-msgfi-sdk
+yarn add -D muto-design
 ```
 
 ```bash [pnpm]
-pnpm add -D x-msgfi-sdk
+pnpm add -D muto-design
 ```
-:::
 
+:::
 
 ## 使用
 
 ```tsx | pure
-import { WaterMark } from 'x-msgfi-sdk';
+import { WaterMark } from 'muto-design';
 
 export default () => {
   return <WaterMark text="example@xx.xx.com"/>

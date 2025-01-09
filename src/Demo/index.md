@@ -10,7 +10,7 @@ demo:
 ## 基本用法
 
 ```jsx
-import { Demo } from 'x-msgfi-sdk';
+import { Demo } from 'muto-design';
 
 export default () => <Demo title="Hello dumi!" />
 ```

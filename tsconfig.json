@@ -8,8 +8,8 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "x-msgfi-sdk": ["src"],
-      "x-msgfi-sdk/*": ["src/*", "*"]
+      "muto-design": ["src"],
+      "muto-design/*": ["src/*", "*"]
     }
   },
   "include": [".dumirc.ts", "src/**/*"]
