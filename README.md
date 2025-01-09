@@ -38,6 +38,21 @@ $ pnpm run docs:preview
 $ pnpm run doctor
 ```
 
+## 代码提交
+
+$ git add .
+
+$ pnpm cm
+
+修复 bug: git commit -m "fix: 修复了 xxx 的问题"
+新功能: git commit -m "feat: 增加了 xxx 的功能"
+文档变更: git commit -m "docs: 更新了 xxx 的文档"
+代码重构: git commit -m "refactor: 重构了 xxx 逻辑"
+格式化代码： git commit -m "style: 删除了多余的空格"
+性能优化: git commit -m "perf: 优化了 xxx 功能"
+其他： git commit -m "chore: 更新 xxx 依赖库"
+
+
 ## LICENSE
 
 MIT
