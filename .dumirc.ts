@@ -5,11 +5,13 @@ const publicPath = process.env.NODE_ENV === 'production' ? './' : '/';
 
 export default defineConfig({
   outputPath: 'docs-dist',
-  favicons: ['images/logo.png'],
-  logo: 'images/logo.png',
+  favicons: ['/images/logo.png'],
+  logo: '/images/logo.png',
   locales: [{ id: 'zh-CN', name: '中文' }],
   alias: {},
   plugins: [],
+  exportStatic: {},
+  runtimePublicPath: {},
   publicPath,
   headScripts: [`window.publicPath='${publicPath}';`],
   devtool: process.env.NODE_ENV === 'development' ? 'eval-source-map' : false,

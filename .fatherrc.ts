@@ -5,5 +5,5 @@ export default defineConfig({
   esm: { output: 'esm' },
   umd: { output: 'lib' },
   // cssModules: true,
-  lessInBabelMode: true,
+  // lessInBabelMode: true,
 });

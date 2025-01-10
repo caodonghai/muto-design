@@ -58,9 +58,7 @@ export const Slider: FC<ISliderProps> = (props) => {
     collapsed,
     onCollapsedChange,
     bordered,
-    remeberKey,
     collapseOptions,
-    sliderPos,
     ...otherProps
   } = props;
   const prefixFun = usePrefix('slider');
@@ -119,7 +117,7 @@ export const Slider: FC<ISliderProps> = (props) => {
       i < len;
       i++
     ) {
-      const childProps = _layoutChildren[i]?.props;
+      const childProps = (_layoutChildren[i] as any)?.props;
       if (childProps && React.isValidElement(_layoutChildren[i])) {
         if (childProps === props) {
           const pIndex = getPositionIndex(_layoutChildren, i);
@@ -235,7 +233,7 @@ export const Slider: FC<ISliderProps> = (props) => {
             opacity: 1,
             left: 5,
             right: 5,
-            justifyContent: flexAlign[align],
+            justifyContent: (flexAlign as any)[align],
             transform: `translateY(${position === 'top' ? 0 : '-100%'})`,
             ...style,
           }}
@@ -267,7 +265,7 @@ export const Slider: FC<ISliderProps> = (props) => {
         ),
       } = collapseOptions;
 
-      const { height, ...style } = deafultStyle || {};
+      const { ...style } = deafultStyle || {};
 
       const divStyle: CSSProperties = collapsed
         ? {
@@ -300,7 +298,7 @@ export const Slider: FC<ISliderProps> = (props) => {
             width: size,
             opacity: 1,
             backgroundColor: '#ECECEC',
-            justifyContent: flexAlign[align],
+            justifyContent: (flexAlign as any)[align],
             ...divStyle,
             ...style,
           }}
@@ -464,6 +462,7 @@ export const Slider: FC<ISliderProps> = (props) => {
     e.stopPropagation();
     const nextHidden = !newProps.hidden;
     setNewProps((p) => ({ ...p, hidden: nextHidden }));
+    // @ts-ignore
     resize?.(nextHidden ? minSize : newProps.style[sizeProp], sizeProp);
   };
 
@@ -491,21 +490,25 @@ export const Slider: FC<ISliderProps> = (props) => {
 
   if (autoExpand) {
     others.onMouseOver = () => {
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       itRef.current && clearTimeout(itRef.current);
       itRef.current = setTimeout(() => {
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         newProps.hidden && setNewProps((p) => ({ ...p, hidden: false }));
       }, 120);
     };
     others.onMouseOut = () => {
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       itRef.current && clearTimeout(itRef.current);
       itRef.current = setTimeout(() => {
         itRef.current = null;
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         !newProps.hidden && setNewProps((p) => ({ ...p, hidden: true }));
       }, 500);
     };
   }
 
-  const getOuterStyle = (pos) => {
+  const getOuterStyle = (pos: any) => {
     const newStyle: CSSProperties = {};
     const m = {
       top: 'marginBottom',
@@ -514,6 +517,7 @@ export const Slider: FC<ISliderProps> = (props) => {
       left: 'marginRight',
     };
     if (bordered) {
+      // @ts-ignore
       newStyle[m[pos]] = 6;
       if (isHidden || (newProps.hidden && collapseOptions)) {
         newStyle.border = `1px solid transparent`;
@@ -568,6 +572,7 @@ export const Slider: FC<ISliderProps> = (props) => {
           style={{ zIndex, ...draggableStyle }}
           onMouseDown={sliderEvents.mousedown}
           onDoubleClick={onDoubleClick}
+          // eslint-disable-next-line react/no-children-prop
           children={
             dragIcon
               ? React.cloneElement(dragIcon, {
@@ -590,6 +595,7 @@ export const Slider: FC<ISliderProps> = (props) => {
               ['left', 'right'].includes(sliderPosition.position) ? 0 : '100%'
             }`,
           }}
+          // eslint-disable-next-line react/no-children-prop
           children={React.cloneElement(icon, {
             style: getIconStyle(sliderPosition.position, 50),
             className: 'translate-icon',

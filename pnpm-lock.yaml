@@ -13,6 +13,7 @@ specifiers:
   commitizen: ^4.3.1
   commitlint-config-cz: ^0.13.3
   commitlint-config-git-commit-emoji: ^1.0.0
+  compression-webpack-plugin: ^11.1.0
   cz-conventional-changelog: ^3.3.0
   cz-customizable: ^7.3.0
   dumi: ^2.4.13
@@ -46,6 +47,7 @@ devDependencies:
   commitizen: 4.3.1
   commitlint-config-cz: 0.13.3
   commitlint-config-git-commit-emoji: 1.0.0
+  compression-webpack-plugin: 11.1.0
   cz-conventional-changelog: 3.3.0
   cz-customizable: 7.3.0
   dumi: 2.4.15_vxwpyuh7rxa43itdwd2rco5smy
@@ -3791,12 +3793,30 @@ packages:
       humanize-ms: 1.2.1
     dev: true
 
+  /ajv-formats/2.1.1:
+    resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
+    peerDependenciesMeta:
+      ajv:
+        optional: true
+    dependencies:
+      ajv: 8.17.1
+    dev: true
+
   /ajv-keywords/3.5.2_ajv@6.12.6:
     resolution: {integrity: sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==}
     peerDependencies:
       ajv: ^6.9.1
     dependencies:
       ajv: 6.12.6
+    dev: true
+
+  /ajv-keywords/5.1.0_ajv@8.17.1:
+    resolution: {integrity: sha512-YCS/JNFAUyr5vAuhk1DWm1CBxRHW9LbJ2ozWeemrIqpbsqKjHVxYPyi5GC0rjZIT5JxJ3virVTS8wk4i/Z+krw==}
+    peerDependencies:
+      ajv: ^8.8.2
+    dependencies:
+      ajv: 8.17.1
+      fast-deep-equal: 3.1.3
     dev: true
 
   /ajv/6.12.6:
@@ -5064,6 +5084,16 @@ packages:
     engines: {node: '>= 0.6'}
     dependencies:
       mime-db: 1.53.0
+    dev: true
+
+  /compression-webpack-plugin/11.1.0:
+    resolution: {integrity: sha512-zDOQYp10+upzLxW+VRSjEpRRwBXJdsb5lBMlRxx1g8hckIFBpe3DTI0en2w7h+beuq89576RVzfiXrkdPGrHhA==}
+    engines: {node: '>= 18.12.0'}
+    peerDependencies:
+      webpack: ^5.1.0
+    dependencies:
+      schema-utils: 4.3.0
+      serialize-javascript: 6.0.2
     dev: true
 
   /compression/1.7.5:
@@ -13032,6 +13062,16 @@ packages:
       ajv-keywords: 3.5.2_ajv@6.12.6
     dev: true
 
+  /schema-utils/4.3.0:
+    resolution: {integrity: sha512-Gf9qqc58SpCA/xdziiHz35F4GNIWYWZrEshUc/G/r5BnLph6xpKuLeoJoQuj5WfBIx/eQLf+hmVPYHaxJu7V2g==}
+    engines: {node: '>= 10.13.0'}
+    dependencies:
+      '@types/json-schema': 7.0.15
+      ajv: 8.17.1
+      ajv-formats: 2.1.1
+      ajv-keywords: 5.1.0_ajv@8.17.1
+    dev: true
+
   /scroll-into-view-if-needed/3.1.0:
     resolution: {integrity: sha512-49oNpRjWRvnU8NyGVmUaYG4jtTkNonFZI86MmGRDqBphEK2EXT9gdEUoQPZhuBM8yWHxCWbobltqYO5M4XrUvQ==}
     dependencies:
@@ -13098,6 +13138,12 @@ packages:
       statuses: 2.0.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /serialize-javascript/6.0.2:
+    resolution: {integrity: sha512-Saa1xPByTTq2gdeFZYLLo+RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6uIvEqJRd46jemmyA4iFIeVk8g==}
+    dependencies:
+      randombytes: 2.1.0
     dev: true
 
   /serve-static/1.16.2:

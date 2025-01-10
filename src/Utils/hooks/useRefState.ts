@@ -1,7 +1,7 @@
 import { Dispatch, useCallback, useEffect, useRef, useState } from 'react';
 import { isFunction , isObject} from 'lodash-es';
 
-type SetStateAction<S> = (S extends {} ? Partial<S> : S) | ((prevState: S) => S);
+type SetStateAction<S> = (S extends Record<string, any> ? Partial<S> : S) | ((prevState: S) => S);
 
 /**
  * 安全执行setState
@@ -11,7 +11,8 @@ type SetStateAction<S> = (S extends {} ? Partial<S> : S) | ((prevState: S) => S)
 export function useRefState<S = any>(initialState: S | (() => S)): [S, Dispatch<SetStateAction<S>>] {
   const ref = useRef<boolean>(true);
   const [state, setState] = useState<S>(initialState);
-  const updateState = useCallback((newState) => {
+  const updateState = useCallback((newState: any) => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     ref.current &&
       setState((prevState) => {
         if (isFunction(newState)) {
