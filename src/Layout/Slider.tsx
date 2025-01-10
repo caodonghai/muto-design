@@ -10,8 +10,8 @@ import React, {
   useRef,
   useState,
 } from 'react';
+import { useUpdateEffect } from '../utils';
 import { LayoutContext } from './context';
-import { useUpdateEffect } from './hooks';
 import { ILayoutProps, ISliderProps } from './interface';
 import { getIconStyle } from './utils';
 
