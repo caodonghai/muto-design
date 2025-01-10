@@ -6,7 +6,7 @@ import { IDemoProps } from './interface';
 
 import './index.less';
 
-const Demo: FC<IDemoProps> = (props) => {
+export const Demo: FC<IDemoProps> = (props) => {
   const { title = '我是Title' } = props;
   const prefixFun = usePrefix('demo');
 
@@ -14,5 +14,7 @@ const Demo: FC<IDemoProps> = (props) => {
     <span className={cls('demo-box', cls(prefixFun('box')))}>{title}</span>
   );
 };
+
+export * from './interface';
 
 export default Demo;

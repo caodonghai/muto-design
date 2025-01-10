@@ -1,4 +1,5 @@
-export { default as Demo } from './Demo';
-export { default as Login } from './Login';
-export { default as WaterMark } from './WaterMark';
-export { default as Icon } from './Icon';
+export * from './Demo';
+export * from './Login';
+export * from './WaterMark';
+export * from './Icon';
+export * from './Layout';

@@ -60,4 +60,6 @@ export function WaterMark({ style, ...props }: IWaterMarkProps) {
   return <div style={innerStyle} />;
 }
 
+export * from './interface';
+
 export default memo(WaterMark);

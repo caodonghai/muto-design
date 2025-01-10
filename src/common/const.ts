@@ -1,1 +1,1 @@
-export const defaultPrefix = 'dh-ui'
+export const defaultPrefix = 'muto-ui'

@@ -18,7 +18,7 @@ export * from './interface';
  * @param props IIconProps
  * @returns ReactNode
  */
-const Icon: FC<IIconProps> = (props) => {
+export const Icon: FC<IIconProps> = (props) => {
   const { href, type, style, fontSize, className } = props;
 
   useLayoutEffect(() => {
@@ -38,5 +38,7 @@ const Icon: FC<IIconProps> = (props) => {
 
   return <i className={cls('iconfont', type, className)} style={styleMemo}></i>;
 };
+
+export * from './interface';
 
 export default memo(Icon);
